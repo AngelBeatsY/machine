@@ -1,0 +1,85 @@
+.course{ margin: 30px 0;color: #666; }
+.course .media-item{
+	padding: 5px 15px;
+}
+.course .media-border {
+    display: block;
+    background-color: rgba(255,255,255,0);
+    border-radius: 3px;
+    padding: 3px;
+    position: relative;
+}
+.course .media-content{
+	width:480px;
+	height:270px;
+	margin: 0 auto;
+	position: relative; 
+	display:block;
+}
+.media-content:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s;
+	background-image: url(/machine/course/images/youtube-btn-ylw.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	
+}
+.media-item .media-border:hover .media-content:before{
+	visibility:visible;
+	opacity:1;
+	background-color:rgba(8,27,43,.9);
+	background-image: url(/machine/course/images/youtube-btn-wh.png);
+	box-shadow:0 0 0 2px rgba(0,195,255,.9)inset,0 0 0 2px rgba(0,195,255,.9),0 0 28px rgba(0,195,255,.9)inset;
+}
+.m-media-wp-span{ 
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(3,20,26,.75);
+    line-height: 40px;
+	color: #fff;
+	transition:all 0.6s;
+	font-size: 16px;
+}
+.m-media-wp-span:hover{
+	color: #f7931e;
+	/*top:50%;*/
+}
+.video-keywords{
+	display: none;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.paging{
+	text-align: center;
+}
+
+ /* 小屏幕（平板，大于等于 768px） */ 
+@media (min-width: 768px) { 
+	.course .media-content{
+		width:100%;
+		height:200px;
+	}
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */ 
+@media (min-width: 992px) { 
+	.course .media-content{
+		width:100%;
+		height:200px;
+	}
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */ 
+@media (min-width: 1200px) { 
+	.course .media-content{
+		width:100%;
+		height:200px;
+	}
+}

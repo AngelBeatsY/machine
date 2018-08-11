@@ -1,0 +1,61 @@
+body { font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif; }
+#navbar-collapse ul{
+	margin-top: 0;
+}
+a:focus { outline: none; } 
+/* .navbar-brand { padding:0; }  */
+#div-invisible{  width: 100%;height: 50px;background: #f2f2f2;}
+.m-back {
+	display: block;
+	position: fixed;
+	text-indent: -9999px;
+	/*left: 50%;*/
+	/*margin-left: 600px;*/
+	right: 2%;
+	bottom: 10px;
+	width: 49px;
+	height: 45px;
+	background: url(/machine/public/static/images/sprite.png);
+	background-position: -265px -47px;
+	display: none;
+	/*z-index:100;*/
+}
+.m-back:hover {
+	background-position: -325px -47px;
+}
+.dropdown:hover{
+	background-color: #e7e7e7;
+}
+.dropdown-menu{
+	text-align: center;
+	background-color: #fefefe;
+}
+.dropdown-menu>li>a{
+	/*line-height: 25px;*/
+}
+.navbar-avatar{
+	width: 50px;height: 50px;display: inline-block;margin: -15px 5px;
+	padding: 0; /*overflow: hidden;*/
+}
+.navbar-avatar-img{
+	width: 100%;height: 100%;display: inline-block;transition: all 0.3s;
+}
+.navbar-avatar-img:hover{
+	transform: scale(1.2);
+}
+#footer{
+	background-color: #eee;
+	border-top:1px solid #ccc;
+	padding: 12px;
+	text-align: center;
+}
+#adminLoginForm .admin-input{
+	margin: 15px 0;
+}
+.logo{
+	width: 50px;
+	height: 50px;
+	background: url(/machine/public/static/images/machine_logo.png) no-repeat 6px -12px;
+	/*background: url(/machine/logo1.png) no-repeat -10px -5px;*/
+	display: inline-block;
+}

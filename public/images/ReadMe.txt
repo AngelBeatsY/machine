@@ -1,0 +1,1 @@
+transparent.png--视频播放页面，视频的poster，不设置则显示视频第一帧，且不会显示默认video_cover.jpg

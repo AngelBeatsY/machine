@@ -1,0 +1,99 @@
+body{
+	background: rgba(0,0,0,0.7);
+	/*background: url(/machine/public/images/bg-img-comm.jpg) no-repeat fixed left;*/
+	/*background-size: cover;*/
+}
+#cmtlist .container{
+	padding-top: 30px;
+	margin-bottom: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	color: rgba(0,0,0,0.7);
+	background-color: rgba(255,255,255,0.6);
+}
+.post-topic{
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-size: 30px;
+}
+.post-topic img{
+	margin-right: 8px;
+	width: 50px;
+	height: 50px;
+}
+.table{
+	margin-bottom: 0;
+}
+.table > tbody > tr > td{
+	padding: 20px 0;
+}
+#cmtlist  .pls{
+	text-align: center;
+	color: rgba(0,0,0,0.7);
+}
+.avatar img{
+	width: 80px;
+	height: 80px;
+}
+.userInfo{
+	margin-top: 15px;
+	height: 24px;
+	line-height: 24px;
+}
+#cmtlist  .pct{
+	color: rgba(0,0,0,0.7);
+}
+#cmtlist .post-info{
+	padding-right: 15px;
+	text-align: right;
+}
+.paging{
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.comment{
+	/*margin-top: 50px;
+	height: 200px;
+	background: rgba(255,255,255,0.5);*/
+}
+#cmt{
+	padding-top: 15px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	color: rgba(0,0,0,0.7);
+	background-color: rgba(255,255,255,0.6);
+}
+#cmt .table > tbody > tr >th,#cmt .table > tbody > tr >td{
+	border-top: 0;
+	border-bottom: 0;
+}
+.cmt-info{
+	text-align: center;
+}
+.cmt-title{
+	margin-bottom: 20px;
+	padding-left: 15px;
+    font-size: 24px;
+	text-align:left;
+	font-weight: bold;
+	color: rgba(0,0,0,0.5);
+}
+.cmt-content{
+	
+}
+#cmt textarea{
+	resize:none;
+}
+.submit-btn{
+	margin-top: 10px;
+	margin-right: 5px;
+	width: 150px;
+	height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	background: #f7931e;
+}

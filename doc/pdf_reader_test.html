@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/pdf.js"></script>
+<link rel="stylesheet" href="css/base.css" type="text/css">
+<title>Machine</title>
+ <style type="text/css">
+ 	iframe{
+ 		width: 720px;
+ 		height: 600px;
+ 	}
+ </style>
+ <script type="text/javascript">
+	function showPdf(){
+		//var arr = location.href.split("?")[1];
+        //var url = arr.split("=")[1];
+		
+		PDFJS.workerSrc = 'js/pdf.worker.js';//加载核心库
+		PDFJS.getDocument(url).then(function getPdfHelloWorld(pdf) {
+		//
+		// 获取第一页数据
+		//
+		pdf.getPage(1).then(function getPageHelloWorld(page) {
+		var scale = 1.5;
+		var viewport = page.getViewport(scale);
+
+		//
+		// Prepare canvas using PDF page dimensions
+		//
+		var canvas = document.getElementById('the-canvas');
+		var context = canvas.getContext('2d');
+		canvas.height = viewport.height;
+		canvas.width = viewport.width;
+
+		//
+		// Render PDF page into canvas context
+		//
+		var renderContext = {
+		canvasContext: context,
+		viewport: viewport
+		};
+		page.render(renderContext);
+		});
+		});
+
+	}
+ </script>
+</head>
+ <body>
+	<!-- <a href="javascript:void(0);" target="_blank" onclick="showPdf()">显示pdf文档</a> -->
+	<div>
+		<a href="../public/file/abc.pdf" target="pdfContainer" onclick="showPdf()">显示pdf文档</a><br>
+		<a href="../public/file/abc.pdf" target="pdfContainer" onclick="showPdf()">显示pdf文档</a>
+	</div>
+	<canvas id="the-canvas"></canvas>
+	<iframe src="" frameborder="0" id="pdfContainer" name="pdfContainer"></iframe>
+ </body>
+</html>
